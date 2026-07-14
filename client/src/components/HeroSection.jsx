@@ -13,7 +13,7 @@ export const HeroSection = () => {
     "",
     "const developer = new FullStackDeveloper({",
     "  name: 'Kartik Namdev',",
-    "  stack: ['MERN Stack', 'Generative AI', 'Backend Engineering'],",
+    "  stack: ['MERN Stack', 'Generative AI', 'Devops'],",
     "  focus: 'Building scalable AI-powered web solutions',",
     "  status: 'Open to SDE opportunities'",
     "});",
@@ -26,7 +26,7 @@ export const HeroSection = () => {
   ];
 
   const achievements = [
-    { number: "9.06", label: "CGPA at VIT Vellore", icon: <Award className="h-3 w-3" /> },
+    { number: "9.13", label: "CGPA at VIT Vellore", icon: <Award className="h-3 w-3" /> },
     { number: "4+", label: "Key Featured Projects", icon: <TrendingUp className="h-3 w-3" /> },
     { number: "2027", label: "Graduation Year", icon: <Calendar className="h-3 w-3" /> },
     { number: "100%", label: "Dedication & Focus", icon: <Zap className="h-3 w-3" /> }
@@ -55,7 +55,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('/resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('/Kartik_Namdev_Resume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -111,7 +111,7 @@ export const HeroSection = () => {
             </motion.h1>
 
             <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              Passionate Full Stack Developer specializing in <span className="text-primary font-semibold">MERN Stack</span>, <span className="text-primary font-semibold">Generative AI</span>, and <span className="text-primary font-semibold">Backend Engineering</span>. I enjoy building scalable web applications and AI-powered solutions that solve real-world problems.
+              Passionate Full Stack Developer specializing in <span className="text-primary font-semibold">MERN Stack</span>, <span className="text-primary font-semibold">Generative AI</span>, and <span className="text-primary font-semibold">Devops</span>. I enjoy building scalable web applications and AI-powered solutions that solve real-world problems.
             </motion.p>
 
             <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>

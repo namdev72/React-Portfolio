@@ -8,7 +8,7 @@ const projects = [
     title: "CareerPilot AI",
     category: "AI SaaS",
     description: "An AI-powered interview preparation platform that analyzes a user's resume and job description to generate personalized interview strategies, technical/behavioral questions, strengths, weaknesses, match score, and preparation roadmap using Google Gemini AI.",
-    image: "/projects/project8.png",
+    image: "/projects/careerai.png",
     video: "/projects/videos/genaxix-demo.mp4",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Google Gemini API", "JWT", "SCSS"],
     demoUrl: "#",
@@ -23,7 +23,7 @@ const projects = [
     title: "Samsung Prism Research Project",
     category: "AI Automation",
     description: "Autonomous Interaction Management Framework for Dynamic Site Handling. A research-based AI browser automation framework that combines Playwright, LangChain, and LLMs to interact with dynamic websites through DOM understanding, reasoning, and autonomous planning.",
-    image: "/projects/project6.png",
+    image: "/projects/Autonomus-interaction.png",
     video: "/projects/videos/jobque-demo.mp4",
     tags: ["Python", "Playwright", "LangChain", "LLMs", "DOM Parsing", "Automation"],
     demoUrl: "#",
@@ -38,7 +38,7 @@ const projects = [
     title: "StarVideo",
     category: "Backend Engineering",
     description: "A robust MERN-based video streaming backend service supporting user authentication, video uploads, video processing, comments, likes, subscriptions, and Cloudinary media management.",
-    image: "/projects/project5.png",
+    image: "/projects/startube.png",
     video: "/projects/videos/eattoo-demo.mp4",
     tags: ["Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
     demoUrl: "#",
@@ -53,7 +53,7 @@ const projects = [
     title: "BookLoop",
     category: "Web App",
     description: "A peer-to-peer book exchange platform allowing users to exchange books using a credit-based token system and visual catalog management.",
-    image: "/projects/project4.png",
+    image: "/projects/BookLoop.png",
     video: "/projects/videos/spendlix-demo.mp4",
     tags: ["React", "Firebase", "Cloudinary", "Netlify"],
     demoUrl: "#",
@@ -62,6 +62,21 @@ const projects = [
     accentColor: "from-rose-500 to-pink-600",
     status: "Live",
     highlights: ["P2P Credit Exchange System", "Firebase Firestore & Auth", "Dynamic catalog search", "Cloudinary image host"]
+  },
+  {
+    id: 5,
+    title: "QuickBlock",
+    category: "Web App",
+    description: "A modern full-stack blogging application built with React, Appwrite, Redux Toolkit, TinyMCE, and Tailwind CSS. Supports authentication, image uploads, rich text editing, and complete blog management.",
+    image: "/projects/QuickBlog.png",
+    video: "#",
+    tags: ["React", "Appwrite", "Redux Toolkit", "TinyMCE", "Tailwind CSS"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/namdev72/QuickBlogs",
+    featured: true,
+    accentColor: "from-cyan-500 to-blue-600",
+    status: "Live",
+    highlights: ["Secure Authentication with Appwrite", "Rich Text Editing via TinyMCE", "State Management with Redux Toolkit", "Responsive Design using Tailwind CSS"]
   }
 ];
 
@@ -187,22 +202,25 @@ export const ProjectsSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex flex-wrap justify-center gap-2">
-            {categories.map((category) => (
-              <motion.button
-                key={category}
-                onClick={() => handleFilterChange(category)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
-                  activeFilter === category
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "bg-background text-muted-foreground border-border hover:border-primary hover:text-primary"
-                }`}
-              >
-                {category}
-              </motion.button>
-            ))}
+          <div className="inline-flex flex-wrap justify-center gap-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border bg-primary text-primary-foreground border-primary"
+            >
+              All
+            </motion.button>
+            <motion.a
+              href="https://github.com/namdev72"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border bg-background text-muted-foreground border-border hover:border-primary hover:text-primary flex items-center gap-2"
+            >
+              For More See GitHub
+              <ExternalLink size={14} />
+            </motion.a>
           </div>
         </motion.div>
 

@@ -8,7 +8,7 @@ export const AboutSection = () => {
   const [counter, setCounter] = useState(0);
 
   const achievements = [
-    { number: "9.06", label: "B.Tech CGPA", icon: <Target className="h-5 w-5" />, suffix: "" },
+    { number: "9.13", label: "B.Tech CGPA", icon: <Target className="h-5 w-5" />, suffix: "" },
     { number: "4+", label: "Key Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
     { number: "2023", label: "Start Year", icon: <Calendar className="h-5 w-5" />, suffix: "" },
     { number: "2027", label: "Graduation", icon: <User className="h-5 w-5" />, suffix: "" }
@@ -20,7 +20,7 @@ export const AboutSection = () => {
     { category: "GenAI & Tools", items: ["Google Gemini API", "LangChain", "Git/GitHub", "Docker/AWS"] }
   ];
 
-  const features = ["Full-stack MERN stack", "Generative AI integrations", "Backend & REST API design", "DOM parsing & automation", "Autonomous LLM reasoning", "Scalable clean architecture"];
+  const features = ["Full-stack MERN stack", "Generative AI integrations", "Backend & REST API design", "Devops", "AWS / Cloud Engineering", "Scalable clean architecture"];
 
   const socialLinks = [
     { icon: <Github className="h-5 w-5" />, href: "https://github.com/namdev72" },
@@ -29,9 +29,9 @@ export const AboutSection = () => {
   ];
 
   const tabContent = {
-    personal: "Passionate about creating digital solutions that make a difference. When I'm not coding, I'm exploring new technologies, experimenting with LLMs, and building web automations.",
-    professional: "Final Year B.Tech Computer Science Engineering (IoT) student at VIT Vellore. I specialize in Full Stack Development, Backend Engineering, and Generative AI. I have hands-on experience building MERN apps, integrating OpenAI/Gemini APIs, and designing automation frameworks.",
-    approach: "I believe in clean, structured code, prompt engineering best practices, and user-centered design. My process combines quick iteration, architectural planning, and active problem solving."
+    personal: "👤 Passionate about transforming ideas into impactful software through continuous learning, innovation, and problem-solving. I enjoy exploring new technologies and building solutions that create real-world value.",
+    professional: "💼 Full-Stack Developer specializing in Backend Engineering, Generative AI, and DevOps. Skilled in developing scalable applications, architecting robust backend systems, integrating AI capabilities, and implementing modern deployment workflows.",
+    approach: "🚀 I combine strong engineering principles with practical problem-solving to build scalable, maintainable, and user-focused software. I value clean architecture, automation, collaboration, and continuous learning throughout the development lifecycle."
   };
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Must be in public folder
+    link.href = '/Kartik_Namdev_Resume.pdf'; // Must be in public folder
     link.download = 'Kartik-Namdev-Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -101,7 +101,7 @@ export const AboutSection = () => {
                   {/* Profile Image */}
                   <div className="relative flex-shrink-0">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
-                      <img src="/profile-placeholder.png" alt="Kartik Namdev" className="w-full h-full object-cover" />
+                      <img src="/Profile-photo.png" alt="Kartik Namdev" className="w-full h-full object-cover" />
                       <div className="absolute -bottom-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
                         <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse" />
                       </div>
