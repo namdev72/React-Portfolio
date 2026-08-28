@@ -27,7 +27,7 @@ export const HeroSection = () => {
 
   const achievements = [
     { number: "9.13", label: "CGPA at VIT Vellore", icon: <Award className="h-3 w-3" /> },
-    { number: "4+", label: "Key Featured Projects", icon: <TrendingUp className="h-3 w-3" /> },
+    { number: "15+", label: "Key Featured Projects", icon: <TrendingUp className="h-3 w-3" /> },
     { number: "2027", label: "Graduation Year", icon: <Calendar className="h-3 w-3" /> },
     { number: "100%", label: "Dedication & Focus", icon: <Zap className="h-3 w-3" /> }
   ];
@@ -55,7 +55,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('/Kartik_Namdev_Resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1Ux-wbgQXUYFeoST48GJuXIktOH_ui1Pf/view', '_blank', 'noopener,noreferrer');
   };
 
   return (

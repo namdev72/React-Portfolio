@@ -9,7 +9,7 @@ export const AboutSection = () => {
 
   const achievements = [
     { number: "9.13", label: "B.Tech CGPA", icon: <Target className="h-5 w-5" />, suffix: "" },
-    { number: "4+", label: "Key Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
+    { number: "15+", label: "Key Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
     { number: "2023", label: "Start Year", icon: <Calendar className="h-5 w-5" />, suffix: "" },
     { number: "2027", label: "Graduation", icon: <User className="h-5 w-5" />, suffix: "" }
   ];
@@ -45,14 +45,9 @@ export const AboutSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Programmatic download function
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/Kartik_Namdev_Resume.pdf'; // Must be in public folder
-    link.download = 'Kartik-Namdev-Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  // Programmatic view resume function
+  const handleViewResume = () => {
+    window.open('https://drive.google.com/file/d/1Ux-wbgQXUYFeoST48GJuXIktOH_ui1Pf/view', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -194,14 +189,14 @@ export const AboutSection = () => {
                   <div className="flex items-center justify-center gap-2 sm:gap-3"><User className="h-4 sm:h-5 w-4 sm:w-5 group-hover:scale-110 transition-transform duration-300" />Start a Project</div>
                 </a>
 
-                {/* Download Button */}
+                {/* View Resume Button */}
                 <button
-                  onClick={handleDownload}
+                  onClick={handleViewResume}
                   className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group"
                 >
                   <div className="flex items-center justify-center gap-2 sm:gap-3">
                     <Download className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-y-0.5 transition-transform duration-300" />
-                    Download Resume
+                    View Resume
                   </div>
                 </button>
               </div>
