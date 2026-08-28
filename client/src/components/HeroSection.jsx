@@ -55,7 +55,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('https://drive.google.com/file/d/1Ux-wbgQXUYFeoST48GJuXIktOH_ui1Pf/view', '_blank', 'noopener,noreferrer');
+    window.open('/Kartik_Namdev_Resume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
